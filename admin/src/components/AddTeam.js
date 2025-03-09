@@ -104,7 +104,7 @@ export default function AdminTeams({ socket }) {
               <tr>
                 <th>#</th>
                 <th>Team Name</th>
-                <th>Created At</th>
+                <th>List</th>
                 <th>Actions</th>
               </tr>
             </thead>
@@ -114,7 +114,7 @@ export default function AdminTeams({ socket }) {
                   <tr key={team._id} className="text-center">
                     <td className="fw-bold">{index + 1}</td>
                     <td>{team.teamName}</td>
-                    <td>{new Date(team.createdAt).toLocaleString()}</td>
+                    <td> Member </td>
                     <td>
                       <Button
                         variant="warning"
